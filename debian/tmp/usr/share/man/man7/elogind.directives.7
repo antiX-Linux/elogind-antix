@@ -1,0 +1,1400 @@
+'\" t
+.TH "ELOGIND\&.DIRECTIVES" "7" "" "elogind 234.4" "elogind.directives"
+.\" -----------------------------------------------------------------
+.\" * Define some portability stuff
+.\" -----------------------------------------------------------------
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.\" http://bugs.debian.org/507673
+.\" http://lists.gnu.org/archive/html/groff/2009-02/msg00013.html
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.ie \n(.g .ds Aq \(aq
+.el       .ds Aq '
+.\" -----------------------------------------------------------------
+.\" * set default formatting
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+elogind.directives \- Index of configuration directives
+.SH "ENVIRONMENT VARIABLES"
+.PP
+Environment variables understood by the elogind manager and other programs\&.
+.PP
+\fI$LISTEN_FDNAMES\fR
+.RS 4
+\fBsd_listen_fds\fR(3)
+.RE
+.PP
+\fI$LISTEN_FDS\fR
+.RS 4
+\fBsd_listen_fds\fR(3)
+.RE
+.PP
+\fI$LISTEN_PID\fR
+.RS 4
+\fBsd_listen_fds\fR(3)
+.RE
+.PP
+\fI$NOTIFY_SOCKET\fR
+.RS 4
+\fBsd_notify\fR(3)
+.RE
+.PP
+\fI$SYSTEMD_LESS\fR
+.RS 4
+\fBloginctl\fR(1)
+.RE
+.PP
+\fI$SYSTEMD_LESSCHARSET\fR
+.RS 4
+\fBloginctl\fR(1)
+.RE
+.PP
+\fI$SYSTEMD_PAGER\fR
+.RS 4
+\fBloginctl\fR(1)
+.RE
+.PP
+\fI$WATCHDOG_PID\fR
+.RS 4
+\fBsd_watchdog_enabled\fR(3)
+.RE
+.PP
+\fI$WATCHDOG_USEC\fR
+.RS 4
+\fBsd_watchdog_enabled\fR(3)
+.RE
+.PP
+\fI$XDG_RUNTIME_DIR\fR
+.RS 4
+\fBpam_elogind\fR(8)
+.RE
+.PP
+\fI$XDG_SEAT\fR
+.RS 4
+\fBpam_elogind\fR(8)
+.RE
+.PP
+\fI$XDG_SESSION_CLASS\fR
+.RS 4
+\fBpam_elogind\fR(8)
+.RE
+.PP
+\fI$XDG_SESSION_DESKTOP\fR
+.RS 4
+\fBpam_elogind\fR(8)
+.RE
+.PP
+\fI$XDG_SESSION_ID\fR
+.RS 4
+\fBpam_elogind\fR(8)
+.RE
+.PP
+\fI$XDG_SESSION_TYPE\fR
+.RS 4
+\fBpam_elogind\fR(8)
+.RE
+.PP
+\fI$XDG_VTNR\fR
+.RS 4
+\fBpam_elogind\fR(8)
+.RE
+.SH "PAM CONFIGURATION DIRECTIVES"
+.PP
+Directives for configuring PAM behaviour\&.
+.PP
+\fBclass=\fR
+.RS 4
+\fBpam_elogind\fR(8)
+.RE
+.PP
+\fBdebug\fR\fB[=]\fR
+.RS 4
+\fBpam_elogind\fR(8)
+.RE
+.PP
+\fBtype=\fR
+.RS 4
+\fBpam_elogind\fR(8)
+.RE
+.SH "COMMAND LINE OPTIONS"
+.PP
+Command\-line options accepted by programs in the elogind suite\&.
+.PP
+\fB\-\-all\fR
+.RS 4
+\fBloginctl\fR(1)
+.RE
+.PP
+\fB\-\-full\fR
+.RS 4
+\fBloginctl\fR(1)
+.RE
+.PP
+\fB\-\-help\fR
+.RS 4
+\fBloginctl\fR(1)
+.RE
+.PP
+\fB\-\-host=\fR
+.RS 4
+\fBloginctl\fR(1)
+.RE
+.PP
+\fB\-\-kill\-who=\fR
+.RS 4
+\fBloginctl\fR(1)
+.RE
+.PP
+\fB\-\-machine=\fR
+.RS 4
+\fBloginctl\fR(1)
+.RE
+.PP
+\fB\-\-no\-ask\-password\fR
+.RS 4
+\fBloginctl\fR(1)
+.RE
+.PP
+\fB\-\-no\-legend\fR
+.RS 4
+\fBloginctl\fR(1)
+.RE
+.PP
+\fB\-\-no\-pager\fR
+.RS 4
+\fBloginctl\fR(1)
+.RE
+.PP
+\fB\-\-property=\fR
+.RS 4
+\fBloginctl\fR(1)
+.RE
+.PP
+\fB\-\-signal=\fR
+.RS 4
+\fBloginctl\fR(1)
+.RE
+.PP
+\fB\-\-value\fR
+.RS 4
+\fBloginctl\fR(1)
+.RE
+.PP
+\fB\-\-version\fR
+.RS 4
+\fBloginctl\fR(1)
+.RE
+.PP
+\fB\-H\fR
+.RS 4
+\fBloginctl\fR(1)
+.RE
+.PP
+\fB\-M\fR
+.RS 4
+\fBloginctl\fR(1)
+.RE
+.PP
+\fB\-a\fR
+.RS 4
+\fBloginctl\fR(1)
+.RE
+.PP
+\fB\-h\fR
+.RS 4
+\fBloginctl\fR(1)
+.RE
+.PP
+\fB\-l\fR
+.RS 4
+\fBloginctl\fR(1)
+.RE
+.PP
+\fB\-p\fR
+.RS 4
+\fBloginctl\fR(1)
+.RE
+.PP
+\fB\-s\fR
+.RS 4
+\fBloginctl\fR(1)
+.RE
+.SH "CONSTANTS"
+.PP
+Various constant used and/or defined by elogind\&.
+.PP
+\fB \-1\fR
+.RS 4
+\fBsd_event_wait\fR(3),
+\fBsd_login_monitor_new\fR(3)
+.RE
+.PP
+\fB\*(Aqs\*(Aq\fR
+.RS 4
+\fBsd_bus_message_read_basic\fR(3)
+.RE
+.PP
+\fB\*(Aqy\*(Aq\fR
+.RS 4
+\fBsd_bus_message_read_basic\fR(3)
+.RE
+.PP
+\fB\-1\fR
+.RS 4
+\fBsd_event_run\fR(3)
+.RE
+.PP
+\fB\-BADF\fR
+.RS 4
+\fBsd_pid_get_session\fR(3)
+.RE
+.PP
+\fB\-EADDRINUSE\fR
+.RS 4
+\fBsd_bus_request_name\fR(3)
+.RE
+.PP
+\fB\-EALREADY\fR
+.RS 4
+\fBsd_bus_request_name\fR(3)
+.RE
+.PP
+\fB\-EBUSY\fR
+.RS 4
+\fBsd_bus_track_new\fR(3),
+\fBsd_event_add_child\fR(3),
+\fBsd_event_add_signal\fR(3),
+\fBsd_event_run\fR(3),
+\fBsd_event_wait\fR(3)
+.RE
+.PP
+\fB\-ECHILD\fR
+.RS 4
+\fBsd_bus_request_name\fR(3),
+\fBsd_event_add_child\fR(3),
+\fBsd_event_add_defer\fR(3),
+\fBsd_event_add_io\fR(3),
+\fBsd_event_add_signal\fR(3),
+\fBsd_event_add_time\fR(3),
+\fBsd_event_exit\fR(3),
+\fBsd_event_get_fd\fR(3),
+\fBsd_event_now\fR(3),
+\fBsd_event_run\fR(3),
+\fBsd_event_set_watchdog\fR(3),
+\fBsd_event_source_get_pending\fR(3),
+\fBsd_event_source_set_description\fR(3),
+\fBsd_event_source_set_enabled\fR(3),
+\fBsd_event_source_set_prepare\fR(3),
+\fBsd_event_source_set_priority\fR(3),
+\fBsd_event_wait\fR(3)
+.RE
+.PP
+\fB\-EDOM\fR
+.RS 4
+\fBsd_event_add_child\fR(3),
+\fBsd_event_add_io\fR(3),
+\fBsd_event_add_signal\fR(3),
+\fBsd_event_add_time\fR(3),
+\fBsd_event_source_get_pending\fR(3),
+\fBsd_event_source_set_prepare\fR(3)
+.RE
+.PP
+\fB\-EEXIST\fR
+.RS 4
+\fBsd_bus_request_name\fR(3)
+.RE
+.PP
+\fB\-EINVAL\fR
+.RS 4
+\fBsd_bus_creds_get_pid\fR(3),
+\fBsd_bus_creds_new_from_pid\fR(3),
+\fBsd_bus_default\fR(3),
+\fBsd_bus_error\fR(3),
+\fBsd_bus_error_add_map\fR(3),
+\fBsd_bus_message_append\fR(3),
+\fBsd_bus_message_append_array\fR(3),
+\fBsd_bus_message_append_basic\fR(3),
+\fBsd_bus_message_append_string_memfd\fR(3),
+\fBsd_bus_message_append_strv\fR(3),
+\fBsd_bus_message_get_cookie\fR(3),
+\fBsd_bus_message_get_monotonic_usec\fR(3),
+\fBsd_bus_request_name\fR(3),
+\fBsd_bus_track_add_name\fR(3),
+\fBsd_bus_track_new\fR(3),
+\fBsd_event_add_child\fR(3),
+\fBsd_event_add_defer\fR(3),
+\fBsd_event_add_io\fR(3),
+\fBsd_event_add_signal\fR(3),
+\fBsd_event_add_time\fR(3),
+\fBsd_event_exit\fR(3),
+\fBsd_event_get_fd\fR(3),
+\fBsd_event_now\fR(3),
+\fBsd_event_run\fR(3),
+\fBsd_event_set_watchdog\fR(3),
+\fBsd_event_source_get_pending\fR(3),
+\fBsd_event_source_set_description\fR(3),
+\fBsd_event_source_set_enabled\fR(3),
+\fBsd_event_source_set_prepare\fR(3),
+\fBsd_event_source_set_priority\fR(3),
+\fBsd_event_wait\fR(3),
+\fBsd_login_monitor_new\fR(3),
+\fBsd_machine_get_class\fR(3),
+\fBsd_pid_get_session\fR(3),
+\fBsd_seat_get_active\fR(3),
+\fBsd_session_is_active\fR(3),
+\fBsd_uid_get_state\fR(3)
+.RE
+.PP
+\fB\-EIO\fR
+.RS 4
+\fBsd_bus_error\fR(3)
+.RE
+.PP
+\fB\-EMFILE\fR
+.RS 4
+\fBsd_event_new\fR(3)
+.RE
+.PP
+\fB\-ENODATA\fR
+.RS 4
+\fBsd_bus_creds_get_pid\fR(3),
+\fBsd_bus_message_get_cookie\fR(3),
+\fBsd_bus_message_get_monotonic_usec\fR(3),
+\fBsd_bus_negotiate_fds\fR(3),
+\fBsd_event_exit\fR(3),
+\fBsd_pid_get_session\fR(3),
+\fBsd_seat_get_active\fR(3),
+\fBsd_session_is_active\fR(3),
+\fBsd_uid_get_state\fR(3)
+.RE
+.PP
+\fB\-ENOMEM\fR
+.RS 4
+\fBsd_bus_creds_get_pid\fR(3),
+\fBsd_bus_creds_new_from_pid\fR(3),
+\fBsd_bus_default\fR(3),
+\fBsd_bus_error\fR(3),
+\fBsd_bus_error_add_map\fR(3),
+\fBsd_bus_message_append\fR(3),
+\fBsd_bus_message_append_array\fR(3),
+\fBsd_bus_message_append_basic\fR(3),
+\fBsd_bus_message_append_string_memfd\fR(3),
+\fBsd_bus_message_append_strv\fR(3),
+\fBsd_bus_new\fR(3),
+\fBsd_bus_track_add_name\fR(3),
+\fBsd_bus_track_new\fR(3),
+\fBsd_event_add_child\fR(3),
+\fBsd_event_add_defer\fR(3),
+\fBsd_event_add_io\fR(3),
+\fBsd_event_add_signal\fR(3),
+\fBsd_event_add_time\fR(3),
+\fBsd_event_new\fR(3),
+\fBsd_event_source_get_pending\fR(3),
+\fBsd_event_source_set_description\fR(3),
+\fBsd_event_source_set_enabled\fR(3),
+\fBsd_event_source_set_prepare\fR(3),
+\fBsd_event_source_set_priority\fR(3),
+\fBsd_get_seats\fR(3),
+\fBsd_login_monitor_new\fR(3),
+\fBsd_machine_get_class\fR(3),
+\fBsd_pid_get_session\fR(3),
+\fBsd_seat_get_active\fR(3),
+\fBsd_session_is_active\fR(3),
+\fBsd_uid_get_state\fR(3)
+.RE
+.PP
+\fB\-ENOTCONN\fR
+.RS 4
+\fBsd_bus_request_name\fR(3)
+.RE
+.PP
+\fB\-ENXIO\fR
+.RS 4
+\fBsd_bus_creds_get_pid\fR(3),
+\fBsd_bus_message_append\fR(3),
+\fBsd_bus_message_append_array\fR(3),
+\fBsd_bus_message_append_basic\fR(3),
+\fBsd_bus_message_append_string_memfd\fR(3),
+\fBsd_bus_message_append_strv\fR(3),
+\fBsd_event_new\fR(3),
+\fBsd_event_source_set_description\fR(3),
+\fBsd_machine_get_class\fR(3),
+\fBsd_seat_get_active\fR(3),
+\fBsd_session_is_active\fR(3),
+\fBsd_uid_get_state\fR(3)
+.RE
+.PP
+\fB\-EOPNOTSUPP\fR
+.RS 4
+\fBsd_bus_creds_new_from_pid\fR(3),
+\fBsd_event_add_time\fR(3),
+\fBsd_event_now\fR(3)
+.RE
+.PP
+\fB\-EPERM\fR
+.RS 4
+\fBsd_bus_message_append\fR(3),
+\fBsd_bus_message_append_array\fR(3),
+\fBsd_bus_message_append_basic\fR(3),
+\fBsd_bus_message_append_string_memfd\fR(3),
+\fBsd_bus_message_append_strv\fR(3),
+\fBsd_bus_negotiate_fds\fR(3)
+.RE
+.PP
+\fB\-ESOCKTNOSUPPORT\fR
+.RS 4
+\fBsd_bus_default\fR(3)
+.RE
+.PP
+\fB\-ESRCH\fR
+.RS 4
+\fBsd_bus_creds_new_from_pid\fR(3),
+\fBsd_bus_request_name\fR(3),
+\fBsd_pid_get_session\fR(3)
+.RE
+.PP
+\fB\-ESTALE\fR
+.RS 4
+\fBsd_bus_message_append\fR(3),
+\fBsd_bus_message_append_array\fR(3),
+\fBsd_bus_message_append_basic\fR(3),
+\fBsd_bus_message_append_string_memfd\fR(3),
+\fBsd_bus_message_append_strv\fR(3),
+\fBsd_event_add_child\fR(3),
+\fBsd_event_add_defer\fR(3),
+\fBsd_event_add_io\fR(3),
+\fBsd_event_add_signal\fR(3),
+\fBsd_event_add_time\fR(3),
+\fBsd_event_exit\fR(3),
+\fBsd_event_run\fR(3),
+\fBsd_event_source_get_pending\fR(3),
+\fBsd_event_source_set_prepare\fR(3),
+\fBsd_event_source_set_priority\fR(3),
+\fBsd_event_wait\fR(3)
+.RE
+.PP
+\fB\-EUNATCH\fR
+.RS 4
+\fBsd_bus_track_add_name\fR(3)
+.RE
+.PP
+\fB0\fR
+.RS 4
+\fBsd_event_add_time\fR(3)
+.RE
+.PP
+\fBAF_INET\fR
+.RS 4
+\fBsd_is_fifo\fR(3)
+.RE
+.PP
+\fBAF_INET6\fR
+.RS 4
+\fBsd_is_fifo\fR(3)
+.RE
+.PP
+\fBAF_UNIX\fR
+.RS 4
+\fBpam_elogind\fR(8),
+\fBsd_is_fifo\fR(3),
+\fBsd_notify\fR(3)
+.RE
+.PP
+\fBAF_UNSPEC\fR
+.RS 4
+\fBsd_is_fifo\fR(3)
+.RE
+.PP
+\fBCLOCK_BOOTIME\fR
+.RS 4
+\fBsd-event\fR(3)
+.RE
+.PP
+\fBCLOCK_BOOTTIME\fR
+.RS 4
+\fBsd_event_add_time\fR(3),
+\fBsd_event_now\fR(3)
+.RE
+.PP
+\fBCLOCK_BOOTTIME_ALARM\fR
+.RS 4
+\fBsd-event\fR(3),
+\fBsd_event_add_time\fR(3),
+\fBsd_event_now\fR(3)
+.RE
+.PP
+\fBCLOCK_MONOTONIC\fR
+.RS 4
+\fBsd-event\fR(3),
+\fBsd_bus_message_get_monotonic_usec\fR(3),
+\fBsd_event_add_time\fR(3),
+\fBsd_event_now\fR(3),
+\fBsd_login_monitor_new\fR(3)
+.RE
+.PP
+\fBCLOCK_REALTIME\fR
+.RS 4
+\fBsd-event\fR(3),
+\fBsd_bus_message_get_monotonic_usec\fR(3),
+\fBsd_event_add_time\fR(3),
+\fBsd_event_now\fR(3)
+.RE
+.PP
+\fBCLOCK_REALTIME_ALARM\fR
+.RS 4
+\fBsd-event\fR(3),
+\fBsd_event_add_time\fR(3),
+\fBsd_event_now\fR(3)
+.RE
+.PP
+\fBEPOLLERR\fR
+.RS 4
+\fBsd_event_add_io\fR(3)
+.RE
+.PP
+\fBEPOLLET\fR
+.RS 4
+\fBsd-event\fR(3),
+\fBsd_event_add_io\fR(3)
+.RE
+.PP
+\fBEPOLLHUP\fR
+.RS 4
+\fBsd_event_add_io\fR(3)
+.RE
+.PP
+\fBEPOLLIN\fR
+.RS 4
+\fBsd_event_add_io\fR(3),
+\fBsd_event_get_fd\fR(3)
+.RE
+.PP
+\fBEPOLLOUT\fR
+.RS 4
+\fBsd_event_add_io\fR(3)
+.RE
+.PP
+\fBEPOLLPRI\fR
+.RS 4
+\fBsd_event_add_io\fR(3)
+.RE
+.PP
+\fBEPOLLRDHUP\fR
+.RS 4
+\fBsd_event_add_io\fR(3)
+.RE
+.PP
+\fBNUL\fR
+.RS 4
+\fBsd_bus_message_append\fR(3),
+\fBsd_bus_message_append_basic\fR(3),
+\fBsd_bus_message_append_string_memfd\fR(3),
+\fBsd_bus_message_append_strv\fR(3),
+\fBsd_bus_path_encode\fR(3),
+\fBsd_event_source_set_description\fR(3),
+\fBsd_id128_to_string\fR(3)
+.RE
+.PP
+\fBNULL\fR
+.RS 4
+\fBsd_bus_creds_get_pid\fR(3),
+\fBsd_bus_creds_new_from_pid\fR(3),
+\fBsd_bus_error\fR(3),
+\fBsd_bus_message_append_array\fR(3),
+\fBsd_bus_message_append_basic\fR(3),
+\fBsd_bus_message_append_strv\fR(3),
+\fBsd_bus_new\fR(3),
+\fBsd_bus_path_encode\fR(3),
+\fBsd_bus_track_add_name\fR(3),
+\fBsd_bus_track_new\fR(3),
+\fBsd_event_add_io\fR(3),
+\fBsd_event_add_signal\fR(3),
+\fBsd_event_add_time\fR(3),
+\fBsd_event_new\fR(3),
+\fBsd_event_run\fR(3),
+\fBsd_event_source_set_description\fR(3),
+\fBsd_event_source_set_userdata\fR(3),
+\fBsd_event_source_unref\fR(3),
+\fBsd_event_wait\fR(3),
+\fBsd_get_seats\fR(3),
+\fBsd_is_fifo\fR(3),
+\fBsd_login_monitor_new\fR(3),
+\fBsd_seat_get_active\fR(3),
+\fBsd_session_is_active\fR(3),
+\fBsd_uid_get_state\fR(3)
+.RE
+.PP
+\fBO_NONBLOCK\fR
+.RS 4
+\fBsd_event_add_io\fR(3)
+.RE
+.PP
+\fBPAM_SUCCESS\fR
+.RS 4
+\fBpam_elogind\fR(8)
+.RE
+.PP
+\fBPOLLIN\fR
+.RS 4
+\fBsd_event_get_fd\fR(3),
+\fBsd_login_monitor_new\fR(3)
+.RE
+.PP
+\fBPOLLOUT\fR
+.RS 4
+\fBsd_login_monitor_new\fR(3)
+.RE
+.PP
+\fBSD_BUS_CREDS_AUDIT_LOGIN_UID\fR
+.RS 4
+\fBsd_bus_creds_new_from_pid\fR(3)
+.RE
+.PP
+\fBSD_BUS_CREDS_AUDIT_SESSION_ID\fR
+.RS 4
+\fBsd_bus_creds_new_from_pid\fR(3)
+.RE
+.PP
+\fBSD_BUS_CREDS_AUGMENT\fR
+.RS 4
+\fBsd_bus_creds_new_from_pid\fR(3)
+.RE
+.PP
+\fBSD_BUS_CREDS_BOUNDING_CAPS\fR
+.RS 4
+\fBsd_bus_creds_new_from_pid\fR(3)
+.RE
+.PP
+\fBSD_BUS_CREDS_CGROUP\fR
+.RS 4
+\fBsd_bus_creds_new_from_pid\fR(3)
+.RE
+.PP
+\fBSD_BUS_CREDS_CMDLINE\fR
+.RS 4
+\fBsd_bus_creds_new_from_pid\fR(3)
+.RE
+.PP
+\fBSD_BUS_CREDS_COMM\fR
+.RS 4
+\fBsd_bus_creds_new_from_pid\fR(3)
+.RE
+.PP
+\fBSD_BUS_CREDS_DESCRIPTION\fR
+.RS 4
+\fBsd_bus_creds_new_from_pid\fR(3)
+.RE
+.PP
+\fBSD_BUS_CREDS_EFFECTIVE_CAPS\fR
+.RS 4
+\fBsd_bus_creds_new_from_pid\fR(3)
+.RE
+.PP
+\fBSD_BUS_CREDS_EGID\fR
+.RS 4
+\fBsd_bus_creds_new_from_pid\fR(3)
+.RE
+.PP
+\fBSD_BUS_CREDS_EUID\fR
+.RS 4
+\fBsd_bus_creds_new_from_pid\fR(3)
+.RE
+.PP
+\fBSD_BUS_CREDS_EXE\fR
+.RS 4
+\fBsd_bus_creds_new_from_pid\fR(3)
+.RE
+.PP
+\fBSD_BUS_CREDS_FSGID\fR
+.RS 4
+\fBsd_bus_creds_new_from_pid\fR(3)
+.RE
+.PP
+\fBSD_BUS_CREDS_FSUID\fR
+.RS 4
+\fBsd_bus_creds_new_from_pid\fR(3)
+.RE
+.PP
+\fBSD_BUS_CREDS_GID\fR
+.RS 4
+\fBsd_bus_creds_new_from_pid\fR(3)
+.RE
+.PP
+\fBSD_BUS_CREDS_INHERITABLE_CAPS\fR
+.RS 4
+\fBsd_bus_creds_new_from_pid\fR(3)
+.RE
+.PP
+\fBSD_BUS_CREDS_OWNER_UID\fR
+.RS 4
+\fBsd_bus_creds_new_from_pid\fR(3)
+.RE
+.PP
+\fBSD_BUS_CREDS_PERMITTED_CAPS\fR
+.RS 4
+\fBsd_bus_creds_new_from_pid\fR(3)
+.RE
+.PP
+\fBSD_BUS_CREDS_PID\fR
+.RS 4
+\fBsd_bus_creds_new_from_pid\fR(3)
+.RE
+.PP
+\fBSD_BUS_CREDS_PPID\fR
+.RS 4
+\fBsd_bus_creds_new_from_pid\fR(3)
+.RE
+.PP
+\fBSD_BUS_CREDS_SELINUX_CONTEXT\fR
+.RS 4
+\fBsd_bus_creds_new_from_pid\fR(3)
+.RE
+.PP
+\fBSD_BUS_CREDS_SESSION\fR
+.RS 4
+\fBsd_bus_creds_new_from_pid\fR(3)
+.RE
+.PP
+\fBSD_BUS_CREDS_SGID\fR
+.RS 4
+\fBsd_bus_creds_new_from_pid\fR(3)
+.RE
+.PP
+\fBSD_BUS_CREDS_SUID\fR
+.RS 4
+\fBsd_bus_creds_new_from_pid\fR(3)
+.RE
+.PP
+\fBSD_BUS_CREDS_SUPPLEMENTARY_GIDS\fR
+.RS 4
+\fBsd_bus_creds_new_from_pid\fR(3)
+.RE
+.PP
+\fBSD_BUS_CREDS_TID\fR
+.RS 4
+\fBsd_bus_creds_new_from_pid\fR(3)
+.RE
+.PP
+\fBSD_BUS_CREDS_TID_COMM\fR
+.RS 4
+\fBsd_bus_creds_new_from_pid\fR(3)
+.RE
+.PP
+\fBSD_BUS_CREDS_TTY\fR
+.RS 4
+\fBsd_bus_creds_new_from_pid\fR(3)
+.RE
+.PP
+\fBSD_BUS_CREDS_UID\fR
+.RS 4
+\fBsd_bus_creds_new_from_pid\fR(3)
+.RE
+.PP
+\fBSD_BUS_CREDS_UNIQUE_NAME\fR
+.RS 4
+\fBsd_bus_creds_new_from_pid\fR(3),
+\fBsd_bus_negotiate_fds\fR(3)
+.RE
+.PP
+\fBSD_BUS_CREDS_WELL_KNOWN_NAMES\fR
+.RS 4
+\fBsd_bus_creds_new_from_pid\fR(3),
+\fBsd_bus_negotiate_fds\fR(3)
+.RE
+.PP
+\fBSD_BUS_ERROR_MAKE_CONST(\fR\fB\fIname\fR\fR\fB, \fR\fB\fImessage\fR\fR\fB)\fR
+.RS 4
+\fBsd_bus_error\fR(3)
+.RE
+.PP
+\fBSD_BUS_ERROR_MAKE_CONST()\fR
+.RS 4
+\fBsd_bus_error\fR(3)
+.RE
+.PP
+\fBSD_BUS_ERROR_MAP(\fR\fB\fIname\fR\fR\fB, \fR\fB\fIcode\fR\fR\fB)\fR
+.RS 4
+\fBsd_bus_error_add_map\fR(3)
+.RE
+.PP
+\fBSD_BUS_ERROR_MAP()\fR
+.RS 4
+\fBsd_bus_error_add_map\fR(3)
+.RE
+.PP
+\fBSD_BUS_ERROR_MAP_END\fR
+.RS 4
+\fBsd_bus_error_add_map\fR(3)
+.RE
+.PP
+\fBSD_BUS_ERROR_NO_MEMORY\fR
+.RS 4
+\fBsd_bus_error\fR(3)
+.RE
+.PP
+\fBSD_BUS_ERROR_NULL\fR
+.RS 4
+\fBsd_bus_error\fR(3)
+.RE
+.PP
+\fBSD_BUS_TYPE_ARRAY\fR
+.RS 4
+\fBsd_bus_message_append\fR(3)
+.RE
+.PP
+\fBSD_BUS_TYPE_BOOLEAN\fR
+.RS 4
+\fBsd_bus_message_append\fR(3),
+\fBsd_bus_message_append_basic\fR(3)
+.RE
+.PP
+\fBSD_BUS_TYPE_BYTE\fR
+.RS 4
+\fBsd_bus_message_append\fR(3),
+\fBsd_bus_message_append_basic\fR(3)
+.RE
+.PP
+\fBSD_BUS_TYPE_DICT_ENTRY_BEGIN\fR
+.RS 4
+\fBsd_bus_message_append\fR(3)
+.RE
+.PP
+\fBSD_BUS_TYPE_DICT_ENTRY_END\fR
+.RS 4
+\fBsd_bus_message_append\fR(3)
+.RE
+.PP
+\fBSD_BUS_TYPE_DOUBLE\fR
+.RS 4
+\fBsd_bus_message_append\fR(3),
+\fBsd_bus_message_append_basic\fR(3)
+.RE
+.PP
+\fBSD_BUS_TYPE_INT16\fR
+.RS 4
+\fBsd_bus_message_append\fR(3),
+\fBsd_bus_message_append_basic\fR(3)
+.RE
+.PP
+\fBSD_BUS_TYPE_INT32\fR
+.RS 4
+\fBsd_bus_message_append\fR(3),
+\fBsd_bus_message_append_basic\fR(3)
+.RE
+.PP
+\fBSD_BUS_TYPE_INT64\fR
+.RS 4
+\fBsd_bus_message_append\fR(3),
+\fBsd_bus_message_append_basic\fR(3)
+.RE
+.PP
+\fBSD_BUS_TYPE_OBJECT_PATH\fR
+.RS 4
+\fBsd_bus_message_append\fR(3),
+\fBsd_bus_message_append_basic\fR(3)
+.RE
+.PP
+\fBSD_BUS_TYPE_SIGNATURE\fR
+.RS 4
+\fBsd_bus_message_append\fR(3),
+\fBsd_bus_message_append_basic\fR(3)
+.RE
+.PP
+\fBSD_BUS_TYPE_STRING\fR
+.RS 4
+\fBsd_bus_message_append\fR(3),
+\fBsd_bus_message_append_basic\fR(3)
+.RE
+.PP
+\fBSD_BUS_TYPE_STRUCT_BEGIN\fR
+.RS 4
+\fBsd_bus_message_append\fR(3)
+.RE
+.PP
+\fBSD_BUS_TYPE_STRUCT_END\fR
+.RS 4
+\fBsd_bus_message_append\fR(3)
+.RE
+.PP
+\fBSD_BUS_TYPE_UINT16\fR
+.RS 4
+\fBsd_bus_message_append\fR(3),
+\fBsd_bus_message_append_basic\fR(3)
+.RE
+.PP
+\fBSD_BUS_TYPE_UINT32\fR
+.RS 4
+\fBsd_bus_message_append\fR(3),
+\fBsd_bus_message_append_basic\fR(3)
+.RE
+.PP
+\fBSD_BUS_TYPE_UINT64\fR
+.RS 4
+\fBsd_bus_message_append\fR(3),
+\fBsd_bus_message_append_basic\fR(3)
+.RE
+.PP
+\fBSD_BUS_TYPE_UNIX_FD\fR
+.RS 4
+\fBsd_bus_message_append\fR(3),
+\fBsd_bus_message_append_basic\fR(3),
+\fBsd_bus_negotiate_fds\fR(3)
+.RE
+.PP
+\fBSD_BUS_TYPE_VARIANT\fR
+.RS 4
+\fBsd_bus_message_append\fR(3)
+.RE
+.PP
+\fBSD_EVENT_ARMED\fR
+.RS 4
+\fBsd_event_wait\fR(3)
+.RE
+.PP
+\fBSD_EVENT_EXITING\fR
+.RS 4
+\fBsd_event_wait\fR(3)
+.RE
+.PP
+\fBSD_EVENT_FINISHED\fR
+.RS 4
+\fBsd_event_wait\fR(3)
+.RE
+.PP
+\fBSD_EVENT_INITIAL\fR
+.RS 4
+\fBsd_event_wait\fR(3)
+.RE
+.PP
+\fBSD_EVENT_OFF\fR
+.RS 4
+\fBsd_event_add_child\fR(3),
+\fBsd_event_add_defer\fR(3),
+\fBsd_event_add_io\fR(3),
+\fBsd_event_add_signal\fR(3),
+\fBsd_event_add_time\fR(3),
+\fBsd_event_source_set_enabled\fR(3),
+\fBsd_event_source_unref\fR(3)
+.RE
+.PP
+\fBSD_EVENT_ON\fR
+.RS 4
+\fBsd_event_add_child\fR(3),
+\fBsd_event_add_defer\fR(3),
+\fBsd_event_add_io\fR(3),
+\fBsd_event_add_signal\fR(3),
+\fBsd_event_add_time\fR(3),
+\fBsd_event_source_set_enabled\fR(3)
+.RE
+.PP
+\fBSD_EVENT_ONESHOT\fR
+.RS 4
+\fBsd_event_add_child\fR(3),
+\fBsd_event_add_defer\fR(3),
+\fBsd_event_add_time\fR(3),
+\fBsd_event_source_set_enabled\fR(3)
+.RE
+.PP
+\fBSD_EVENT_PENDING\fR
+.RS 4
+\fBsd_event_wait\fR(3)
+.RE
+.PP
+\fBSD_EVENT_PREPARING\fR
+.RS 4
+\fBsd_event_wait\fR(3)
+.RE
+.PP
+\fBSD_EVENT_PRIORITY_IDLE\fR
+.RS 4
+\fBsd_event_source_set_priority\fR(3)
+.RE
+.PP
+\fBSD_EVENT_PRIORITY_IMPORTANT\fR
+.RS 4
+\fBsd_event_source_set_priority\fR(3)
+.RE
+.PP
+\fBSD_EVENT_PRIORITY_NORMAL\fR
+.RS 4
+\fBsd_event_source_set_priority\fR(3)
+.RE
+.PP
+\fBSD_EVENT_RUNNING\fR
+.RS 4
+\fBsd_event_wait\fR(3)
+.RE
+.PP
+\fBSD_LISTEN_FDS_START\fR
+.RS 4
+\fBsd_listen_fds\fR(3)
+.RE
+.PP
+\fBSIGCHLD\fR
+.RS 4
+\fBsd_event_add_child\fR(3)
+.RE
+.PP
+\fBSIGINT\fR
+.RS 4
+\fBloginctl\fR(1)
+.RE
+.PP
+\fBSIGSTOP\fR
+.RS 4
+\fBloginctl\fR(1)
+.RE
+.PP
+\fBSIGTERM\fR
+.RS 4
+\fBloginctl\fR(1)
+.RE
+.PP
+\fBSOCK_DGRAM\fR
+.RS 4
+\fBsd_is_fifo\fR(3)
+.RE
+.PP
+\fBSOCK_STREAM\fR
+.RS 4
+\fBsd_is_fifo\fR(3)
+.RE
+.PP
+\fBUINT64_MAX\fR
+.RS 4
+\fBsd_event_add_time\fR(3)
+.RE
+.PP
+\fBWCONTINUED\fR
+.RS 4
+\fBsd_event_add_child\fR(3)
+.RE
+.PP
+\fBWEXITED\fR
+.RS 4
+\fBsd_event_add_child\fR(3)
+.RE
+.PP
+\fBWSTOPPED\fR
+.RS 4
+\fBsd_event_add_child\fR(3)
+.RE
+.PP
+\fB_SD_BUS_CREDS_ALL\fR
+.RS 4
+\fBsd_bus_creds_new_from_pid\fR(3)
+.RE
+.PP
+\fBfalse\fR
+.RS 4
+\fBsd_bus_error\fR(3)
+.RE
+.PP
+\fBlibelogind\fR
+.RS 4
+\fBsd-bus\fR(3),
+\fBsd-event\fR(3),
+\fBsd_bus_creds_get_pid\fR(3),
+\fBsd_bus_creds_new_from_pid\fR(3),
+\fBsd_bus_default\fR(3),
+\fBsd_bus_error\fR(3),
+\fBsd_bus_error_add_map\fR(3),
+\fBsd_bus_message_append_array\fR(3),
+\fBsd_bus_message_append_basic\fR(3),
+\fBsd_bus_message_append_string_memfd\fR(3),
+\fBsd_bus_message_append_strv\fR(3),
+\fBsd_bus_message_get_cookie\fR(3),
+\fBsd_bus_message_get_monotonic_usec\fR(3),
+\fBsd_bus_negotiate_fds\fR(3),
+\fBsd_bus_new\fR(3),
+\fBsd_bus_path_encode\fR(3),
+\fBsd_bus_request_name\fR(3),
+\fBsd_bus_track_add_name\fR(3),
+\fBsd_bus_track_new\fR(3),
+\fBsd_event_add_child\fR(3),
+\fBsd_event_add_defer\fR(3),
+\fBsd_event_add_io\fR(3),
+\fBsd_event_add_signal\fR(3),
+\fBsd_event_add_time\fR(3),
+\fBsd_event_exit\fR(3),
+\fBsd_event_get_fd\fR(3),
+\fBsd_event_new\fR(3),
+\fBsd_event_now\fR(3),
+\fBsd_event_run\fR(3),
+\fBsd_event_set_watchdog\fR(3),
+\fBsd_event_source_get_event\fR(3),
+\fBsd_event_source_get_pending\fR(3),
+\fBsd_event_source_set_description\fR(3),
+\fBsd_event_source_set_enabled\fR(3),
+\fBsd_event_source_set_prepare\fR(3),
+\fBsd_event_source_set_priority\fR(3),
+\fBsd_event_source_set_userdata\fR(3),
+\fBsd_event_source_unref\fR(3),
+\fBsd_event_wait\fR(3),
+\fBsd_get_seats\fR(3),
+\fBsd_is_fifo\fR(3),
+\fBsd_listen_fds\fR(3),
+\fBsd_login_monitor_new\fR(3),
+\fBsd_machine_get_class\fR(3),
+\fBsd_notify\fR(3),
+\fBsd_pid_get_session\fR(3),
+\fBsd_seat_get_active\fR(3),
+\fBsd_session_is_active\fR(3),
+\fBsd_uid_get_state\fR(3),
+\fBsd_watchdog_enabled\fR(3)
+.RE
+.PP
+\fBlibelogind\-bus\fR
+.RS 4
+\fBsd_bus_message_append\fR(3)
+.RE
+.SH "MISCELLANEOUS OPTIONS AND DIRECTIVES"
+.PP
+Other configuration elements which don\*(Aqt fit in any of the above groups\&.
+.PP
+\fIHandleHibernateKey=\fR
+.RS 4
+\fBlogind.conf\fR(5)
+.RE
+.PP
+\fIHandleLidSwitch=\fR
+.RS 4
+\fBlogind.conf\fR(5)
+.RE
+.PP
+\fIHandleLidSwitchDocked=\fR
+.RS 4
+\fBlogind.conf\fR(5)
+.RE
+.PP
+\fIHandlePowerKey=\fR
+.RS 4
+\fBlogind.conf\fR(5)
+.RE
+.PP
+\fIHandleSuspendKey=\fR
+.RS 4
+\fBlogind.conf\fR(5)
+.RE
+.PP
+\fIHibernateKeyIgnoreInhibited=\fR
+.RS 4
+\fBlogind.conf\fR(5)
+.RE
+.PP
+\fIHibernateMode=\fR
+.RS 4
+\fBlogind.conf\fR(5)
+.RE
+.PP
+\fIHibernateState=\fR
+.RS 4
+\fBlogind.conf\fR(5)
+.RE
+.PP
+\fIHoldoffTimeoutSec=\fR
+.RS 4
+\fBlogind.conf\fR(5)
+.RE
+.PP
+\fIHybridSleepMode=\fR
+.RS 4
+\fBlogind.conf\fR(5)
+.RE
+.PP
+\fIHybridSleepState=\fR
+.RS 4
+\fBlogind.conf\fR(5)
+.RE
+.PP
+\fIIdleAction=\fR
+.RS 4
+\fBlogind.conf\fR(5)
+.RE
+.PP
+\fIIdleActionSec=\fR
+.RS 4
+\fBlogind.conf\fR(5)
+.RE
+.PP
+\fIInhibitDelayMaxSec=\fR
+.RS 4
+\fBlogind.conf\fR(5)
+.RE
+.PP
+\fIKillExcludeUsers=\fR
+.RS 4
+\fBlogind.conf\fR(5)
+.RE
+.PP
+\fIKillOnlyUsers=\fR
+.RS 4
+\fBlogind.conf\fR(5)
+.RE
+.PP
+\fIKillUserProcesses=\fR
+.RS 4
+\fBlogind.conf\fR(5)
+.RE
+.PP
+\fILidSwitchIgnoreInhibited=\fR
+.RS 4
+\fBlogind.conf\fR(5)
+.RE
+.PP
+\fIPowerKeyIgnoreInhibited=\fR
+.RS 4
+\fBlogind.conf\fR(5)
+.RE
+.PP
+\fIRemoveIPC=\fR
+.RS 4
+\fBlogind.conf\fR(5)
+.RE
+.PP
+\fIRuntimeDirectorySize=\fR
+.RS 4
+\fBlogind.conf\fR(5)
+.RE
+.PP
+\fISD_BUS_NAME_ALLOW_REPLACEMENT\fR
+.RS 4
+\fBsd_bus_request_name\fR(3)
+.RE
+.PP
+\fISD_BUS_NAME_QUEUE\fR
+.RS 4
+\fBsd_bus_request_name\fR(3)
+.RE
+.PP
+\fISD_BUS_NAME_REPLACE_EXISTING\fR
+.RS 4
+\fBsd_bus_request_name\fR(3)
+.RE
+.PP
+\fISuspendKeyIgnoreInhibited=\fR
+.RS 4
+\fBlogind.conf\fR(5)
+.RE
+.PP
+\fISuspendMode=\fR
+.RS 4
+\fBlogind.conf\fR(5)
+.RE
+.PP
+\fISuspendState=\fR
+.RS 4
+\fBlogind.conf\fR(5)
+.RE
+.SH "FILES AND DIRECTORIES"
+.PP
+Paths and file names referred to in the documentation\&.
+.PP
+/dev/null
+.RS 4
+\fBlogind.conf\fR(5)
+.RE
+.PP
+/dev/urandom
+.RS 4
+\fBsd_id128_randomize\fR(3)
+.RE
+.PP
+/etc/
+.RS 4
+\fBlogind.conf\fR(5)
+.RE
+.PP
+/etc/elogind/
+.RS 4
+\fBlogind.conf\fR(5)
+.RE
+.PP
+/etc/elogind/logind\&.conf
+.RS 4
+\fBlogind.conf\fR(5)
+.RE
+.PP
+/proc/\fIpid\fR/comm
+.RS 4
+\fBsd_bus_creds_get_pid\fR(3),
+\fBsd_bus_creds_new_from_pid\fR(3),
+\fBsd_is_fifo\fR(3),
+\fBsd_pid_get_session\fR(3)
+.RE
+.PP
+/proc/self/sessionid
+.RS 4
+\fBpam_elogind\fR(8)
+.RE
+.PP
+/proc/sys/kernel/random/boot_id
+.RS 4
+\fBsd_id128_get_machine\fR(3)
+.RE
+.PP
+/run
+.RS 4
+\fBsd_notify\fR(3)
+.RE
+.PP
+/run/user/$UID
+.RS 4
+\fBpam_elogind\fR(8)
+.RE
+.PP
+/sys
+.RS 4
+\fBloginctl\fR(1),
+\fBsd_is_fifo\fR(3)
+.RE
+.PP
+/sys/fs/cgroup/
+.RS 4
+\fBsd_pid_get_session\fR(3)
+.RE
+.PP
+/sys/power/disk
+.RS 4
+\fBlogind.conf\fR(5)
+.RE
+.PP
+/sys/power/state
+.RS 4
+\fBlogind.conf\fR(5)
+.RE
+.PP
+/usr/lib/elogind/*\&.conf\&.d/
+.RS 4
+\fBlogind.conf\fR(5)
+.RE
+.PP
+/usr/libexec/elogind/elogind
+.RS 4
+\fBelogind\fR(8)
+.RE
+.PP
+\fBloginctl\fR
+.RS 4
+\fBloginctl\fR(1)
+.RE
+.PP
+pam_elogind\&.so
+.RS 4
+\fBpam_elogind\fR(8)
+.RE
+.PP
+\fBpkg\-config\fR
+.RS 4
+\fBsd-bus\fR(3),
+\fBsd-event\fR(3)
+.RE
+.SH "COLOPHON"
+.PP
+This index contains 218 entries in 6 sections, referring to 59 individual manual pages\&.

@@ -1,0 +1,89 @@
+Source: elogind
+Section: admin
+Priority: optional
+Maintainer: Andreas Messer <andi@bastelmap.de>
+Standards-Version: 3.9.8
+Vcs-Git: https://git.devuan.org/amesser/elogind.git
+Vcs-Browser: https://git.devuan.org/amesser/elogind.git
+Homepage: https://github.com/elogind/elogind
+Build-Depends: debhelper (>= 9),
+               dpkg-dev (>= 1.16.0),
+               pkg-config,
+               docbook-xsl,
+               dh-autoreconf,
+               automake (>= 1.11),
+               autoconf,
+               libtool,
+               intltool,
+               gperf,
+               gtk-doc-tools,
+               python3-lxml,
+               libcap-dev,
+               libudev-dev,
+               libmount-dev (>= 2.20),
+               libseccomp-dev (>= 1.0),
+               libblkid-dev (>= 2.24),
+               libpam0g-dev (>= 1.1.2),
+               libacl1-dev,
+               libselinux1-dev,
+               libglib2.0-dev
+
+Package: elogind
+Section: admin
+Priority: optional
+Architecture: linux-any
+Multi-Arch: foreign
+Pre-Depends: debconf, ${misc:Pre-Depends}
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         libudev1,
+         libelogind0 (= ${binary:Version}),
+         lsb-base (>= 3.1),
+         dbus (>= 1.4)
+Recommends: policykit-1
+Provides: logind
+Conflicts: systemd
+Description: user, seat and session management daemon
+ elogind is a session management daemon extracted from systmd project's 
+ "logind"
+
+Package: libelogind0
+Section: libs
+Priority: optional
+Architecture: linux-any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Description: user, seat and session management library
+ This library provides access to elogind session management
+
+Package: libelogind-dev
+Section: libdevel
+Priority: optional
+Architecture: linux-any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         libelogind0 (= ${binary:Version})
+Description: user, seat and session management library (development files)
+ This package contains the files needed for developing applications that 
+ use libelogind
+
+Package: libpam-elogind
+Section: admin
+Priority: optional
+Architecture: linux-any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         libpam-runtime,
+         elogind (= ${binary:Version}),
+Provides: libpam-systemd
+Conflicts: libpam-systemd
+Replaces: libpam-systemd
+Description: elogind PAM module 
+ Plugable Authentication Module to register a session with elogind
+

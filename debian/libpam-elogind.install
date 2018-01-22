@@ -1,0 +1,4 @@
+etc/pam.d/elogind-user
+lib/*/security/pam_elogind.so
+usr/share/man/man8/pam_elogind.8
+debian/extra/elogind /usr/share/pam-configs/

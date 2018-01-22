@@ -1,0 +1,4 @@
+elogind
+libelogind0
+libelogind-dev
+libpam-elogind

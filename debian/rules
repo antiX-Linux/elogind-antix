@@ -1,0 +1,35 @@
+#! /usr/bin/make -f
+
+# The options have been chooses as follows:
+# - manually set pamlibdir because we'Re installing in /usr by default but 
+#   pam libs must go to /lib/*/security
+# - Disable lto because this makes the build fail with static library 
+#   warnings and with  linking errors. (It seems taht instead of ar/ld 
+#   gcc-ar and gcc should be used)
+# - tests disabled beacuase some of the tests seem to require elogind running.
+#   Need to sort out which tests could be run
+
+CONFFLAGS = \
+  --with-pamlibdir=/lib/$(DEB_HOST_MULTIARCH)/security \
+  --with-udevrulesdir=/lib/udev/rules.d \
+  --disable-lto \
+  --disable-tests
+
+CONFFLAGS_CGROUPCTRL_ELOGIND= \
+  --with-cgroup-controller=elogind
+
+override_dh_autoreconf:
+	dh_autoreconf ./autogen.sh
+
+override_dh_auto_configure:
+	dh_auto_configure --builddirectory=build \
+    -- $(CONFFLAGS) $(CONFFLAGS_CGROUPCTRL_ELOGIND)
+
+override_dh_missing:
+	dh_missing --list-missing
+
+override_dh_shlibdeps:
+	dh_shlibdeps -- -xlibeudev1
+	  
+%:
+	dh $@ --builddirectory=build --with autoreconf --parallel

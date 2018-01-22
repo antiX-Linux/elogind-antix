@@ -1,0 +1,13 @@
+Package: libelogind0
+Source: elogind
+Version: 234.4
+Architecture: amd64
+Maintainer: Andreas Messer <andi@bastelmap.de>
+Installed-Size: 480
+Depends: libc6 (>= 2.17), libcap2 (>= 1:2.10), libselinux1 (>= 1.32)
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://github.com/elogind/elogind
+Description: user, seat and session management library
+ This library provides access to elogind session management

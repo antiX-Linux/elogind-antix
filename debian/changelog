@@ -1,0 +1,11 @@
+elogind (234.4) unstable; urgency=medium
+
+  * antiX build 
+
+ -- anticapitalista <antix@operamail.com>  Wed, 17 Jan 2018 12:59:35 +0200
+
+elogind (234.4-1+devuan1) experimental; urgency=medium
+
+  * Initial release.
+
+ -- Andreas Messer <andi@bastelmap.de>  Thu, 04 Jan 2018 19:26:09 +0100

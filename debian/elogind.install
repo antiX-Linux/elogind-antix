@@ -1,0 +1,17 @@
+usr/bin/
+etc/elogind/logind.conf
+/usr/lib/elogind/elogind /usr/sbin/
+/usr/lib/elogind/elogind-cgroups-agent
+lib/udev/rules.d/
+usr/share/bash-completion/
+usr/share/dbus-1/
+usr/share/locale/
+# Skip license files in /usr/share/doc/elogind
+usr/share/doc/elogind/README
+usr/share/doc/elogind/NEWS
+usr/share/man/man1/loginctl.1
+usr/share/man/man5/logind.conf.5
+usr/share/man/man7/elogind.*.7
+usr/share/man/man8/elogind.8
+usr/share/polkit-1/
+usr/share/zsh/

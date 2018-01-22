@@ -1,0 +1,4 @@
+usr/include/elogind/
+usr/lib/*/libelogind.so
+usr/lib/*/pkgconfig/
+usr/share/man/man3/*
