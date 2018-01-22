@@ -1,5 +1,0 @@
-4c9505da93bfc09b6a7d1ac8805fd223  lib/x86_64-linux-gnu/security/pam_elogind.so
-e1da295b940b7eb0ca9fb6dd63ecb3c1  usr/share/doc/libpam-elogind/changelog.gz
-c06262c936804751ef16fed762b25594  usr/share/doc/libpam-elogind/copyright
-65c93c38ff01fbe348881fabeacb349b  usr/share/man/man8/pam_elogind.8.gz
-4baab39e745d84f13187cd39f9221239  usr/share/pam-configs/elogind

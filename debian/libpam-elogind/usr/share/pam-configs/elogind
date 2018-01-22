@@ -1,7 +1,0 @@
-Name: elogind Session Management
-Default: no
-Priority: 0
-Session-Interactive-Only: yes
-Session-Type: Additional
-Session-Final:
-	optional			pam_elogind.so
