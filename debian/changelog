@@ -1,7 +1,16 @@
+elogind (234.4.2) unstable; urgency=medium
+
+  * Devuan upstream changes
+  * Fix startpar not erminating due to open file descriptors after forking
+  * enable elogind pam by default
+  * Drop manpages to allow installation in parallel
+
+ -- anticapitalista <antix@operamail.com>  Fri, 09 Feb 2018 14:57:05 +0200
+
 elogind (234.4.1) unstable; urgency=medium
 
   * debian/rules  - disable killing background processes on logout
-  * upstrem devuan fix
+  * upstream devuan fix
 
  -- anticapitalista <antix@operamail.com>  Wed, 24 Jan 2018 19:48:45 +0200
 

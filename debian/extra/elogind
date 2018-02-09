@@ -1,5 +1,5 @@
 Name: elogind Session Management
-Default: no
+Default: yes
 Priority: 0
 Session-Interactive-Only: yes
 Session-Type: Additional
