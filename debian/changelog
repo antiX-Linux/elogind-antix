@@ -1,3 +1,11 @@
+elogind (234.4.2.1) unstable; urgency=medium
+
+  * Devuan upsteam changes
+  * Make libpam-elogind break libpam-ck-connector
+  * merge changes from suites/experimental
+
+ -- anticapitalista <antix@operamail.com>  Tue, 06 Mar 2018 17:09:35 +0200
+
 elogind (234.4.2) unstable; urgency=medium
 
   * Devuan upstream changes

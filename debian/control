@@ -79,10 +79,11 @@ Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-         libpam-runtime,
          elogind (= ${binary:Version}),
+         libpam-runtime
+Breaks: libpam-ck-connector,
+        libpam-systemd
 Provides: libpam-systemd
-Conflicts: libpam-systemd
 Replaces: libpam-systemd
 Description: elogind PAM module 
  Plugable Authentication Module to register a session with elogind
