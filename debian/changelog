@@ -1,3 +1,9 @@
+elogind (234.4.2.2) unstable; urgency=medium
+
+  * add appropriate hook to initramfs - thanks to PutlerKaputt
+
+ -- anticapitalista <antix@operamail.com>  Fri, 09 Mar 2018 19:46:59 +0200
+
 elogind (234.4.2.1) unstable; urgency=medium
 
   * Devuan upsteam changes
